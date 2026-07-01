@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // 디버그띠 없애기 (기본 트루)
         theme: ThemeData(
-          primarySwatch: Colors.grey
+            scaffoldBackgroundColor: Colors.white // 백그라운드 색상
         ),
         home: Scaffold(
           appBar: AppBar( // 상단 영역
