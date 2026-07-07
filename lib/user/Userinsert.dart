@@ -17,7 +17,6 @@ class UserInsert extends StatelessWidget {
   }
 }
 
-
 class UserInsertScreen extends StatefulWidget {
   const UserInsertScreen({super.key});
 

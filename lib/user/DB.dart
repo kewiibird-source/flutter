@@ -34,12 +34,30 @@ class DB {
   }
   // static 모든 객체에서 접근 가능, 클래스 이름으로 접근 가능
   // 진동벨 같은 느낌, async와 세트
+  // 유저 삽입
   static Future<void> insertUser(String name, int age) async{
     final db = await getDatabase();
     await db.insert("TBL_USER", {'name' : name, 'age' : age});
   }
+  // 유저 리스트
   static Future<List<Map<String, dynamic>>> selectUserList() async{
     final db = await getDatabase();
     return await db.query("TBL_USER");
   }
+  // 1인 유저 검색
+  static Future<List<Map<String, dynamic>>> selectUser(int userId) async{
+    final db = await getDatabase();
+    return await db.query("TBL_USER", where: "userId = ?", whereArgs: [userId]);
+  }
+  // 유저 삭제
+  static Future<void> deleteUser(int userId) async{
+    final db = await getDatabase();
+    await db.delete("TBL_USER", where: "userId = ?", whereArgs: [userId]);
+  }
+  // 유저 수정
+  static Future<void> updateUser(String name, int age, int userId) async{
+    final db = await getDatabase();
+    await db.update("TBL_USER", {'name' : name, 'age' : age}, where: "userId = ?", whereArgs: [userId]);
+  }
+
 }

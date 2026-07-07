@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "454335117223",
+    "project_id": "flutter-kewiibird",
+    "storage_bucket": "flutter-kewiibird.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454335117223:android:da2973f91a42219281a882",
+        "android_client_info": {
+          "package_name": "com.example.p1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoFxmVpdIqWLu9LRbbrKQVh0FSwqM0TUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
