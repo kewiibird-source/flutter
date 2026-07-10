@@ -26,14 +26,14 @@ class Payment extends StatelessWidget {
         ),
       ),
       /* [필수입력] 가맹점 식별코드 */
-      userCode: 'iamport',
+      userCode: 'imp54678825',
       /* [필수입력] 결제 데이터 */
       data: PaymentData(
           pg: 'html5_inicis',                                          // PG사
           payMethod: 'card',                                           // 결제수단
           name: '포트원 V1 결제데이터 분석',                                  // 주문명
           merchantUid: 'mid_${DateTime.now().millisecondsSinceEpoch}', // 주문번호
-          amount: 39000,                                               // 결제금액
+          amount: 1,                                               // 결제금액
           buyerName: '홍길동',                                           // 구매자 이름
           buyerTel: '01012345678',                                     // 구매자 연락처
           buyerEmail: 'example@naver.com',                             // 구매자 이메일
@@ -53,3 +53,4 @@ class Payment extends StatelessWidget {
     );
   }
 }
+
